@@ -9,7 +9,7 @@ module.exports = {
       tsconfig: './tsconfig.jest.json',
     },
   },
-  verbose: true,
+  // verbose: true,
   setupFilesAfterEnv: ['./src/jest.setup.ts'],
   coverageThreshold: {
     global: {

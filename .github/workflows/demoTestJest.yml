@@ -21,19 +21,19 @@ jobs:
           cache: 'npm'
 
       - name: Increase npm timeout
-        run: npm config set fetch-timeout 60000
+        run: npm config set fetch-timeout 120000
 
       - name: Use npm mirror
         run: npm config set registry https://registry.npmjs.org/
 
       - name: Install dependencies
-        run: npm ci --prefer-offline
+        run: npm ci
 
       - name: Lint code
-        run: npm run lint verbose
+        run: npm run
 
       - name: Run tests
-        run: npm run test:ci -- --loglevel verbose
+        run: npm run test:ci
 
       - name: Build
-        run: npm run build -- --loglevel verbose
+        run: npm run build

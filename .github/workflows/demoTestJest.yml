@@ -30,7 +30,7 @@ jobs:
         run: npm ci --prefer-offline
 
       - name: Lint code
-        run: npm run lint -- --loglevel verbose
+        run: npm run lint verbose
 
       - name: Run tests
         run: npm run test:ci -- --loglevel verbose

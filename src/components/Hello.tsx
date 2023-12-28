@@ -1,4 +1,4 @@
 import React from 'react';
 export const Hello = () => {
-  return <div>Hello world</div>;
+  return <span data-testid="text-content">Hello world</span>;
 };

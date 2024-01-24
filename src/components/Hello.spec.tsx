@@ -11,5 +11,6 @@ it('Render "Hello world"', () => {
   expect(myElement).toHaveTextContent(/^Hello world$/);
   // to use case-insentive match
   expect(myElement).toHaveTextContent(/world$/i);
+  expect(myElement).toHaveTextContent(/world$/i);
   // expect(myElement).not.toHaveTextContent('world')
 });
